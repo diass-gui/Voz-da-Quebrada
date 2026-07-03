@@ -13,7 +13,6 @@ function exibirMediaGeral(req, res) {
         console.error("Erro ao buscar a média geral: ", erro.sqlMessage);
         res.status(500).send("Erro ao buscar a média geral.");
     });
-
 }
 
 function exibirQuizMaisAcessado(req, res) {
@@ -29,7 +28,6 @@ function exibirQuizMaisAcessado(req, res) {
         console.error("Erro ao buscar o quiz mais acessado: ", erro.sqlMessage);
         res.status(500).send("Erro ao buscar o quiz mais acessado.");
     });
-
 }
 
 function exibirTotalTentativas(req, res) {
@@ -45,7 +43,6 @@ function exibirTotalTentativas(req, res) {
         console.error("Erro ao buscar o total de tentativas: ", erro.sqlMessage);
         res.status(500).send("Erro ao buscar o total de tentativas.");
     });
-
 }
 
 function exibirDadosQuizzes(req, res) {

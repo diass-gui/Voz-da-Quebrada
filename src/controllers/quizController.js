@@ -16,7 +16,6 @@ function listarPerguntas(req, res) {
             console.error("Erro ao buscar perguntas e respostas: ", erro.sqlMessage);
             res.status(500).send("Erro ao buscar perguntas e respostas.");
         });
-
 }
 
 function listarRespostas(req, res) {
@@ -35,7 +34,6 @@ function listarRespostas(req, res) {
             console.error("Erro ao buscar perguntas e respostas: ", erro.sqlMessage);
             res.status(500).send("Erro ao buscar perguntas e respostas.");
         });
-
 }
 
 function enviarPontuacao(req, res) {
@@ -57,7 +55,6 @@ function enviarPontuacao(req, res) {
             console.error("Erro ao buscar perguntas e respostas: ", erro.sqlMessage);
             res.status(500).send("Erro ao buscar perguntas e respostas.");
         });
-
 }
 
 module.exports = {

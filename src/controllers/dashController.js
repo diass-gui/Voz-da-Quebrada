@@ -1,7 +1,6 @@
 var dashModel = require("../models/dashModel");
 
 function exibirDados(req, res) {
-
     console.log(req.params);
     const idQuiz = parseInt(req.params.idquiz);
     const idUsuario = parseInt(req.params.idusuario);
@@ -14,10 +13,9 @@ function exibirDados(req, res) {
                 console.error("Erro ao buscar os dados das tentativas: ", erro.sqlMessage);
                 res.status(500).send("Erro ao buscar os dados das tentativas.");
             });
-}
+    }
 
 function exibirMedia(req, res) {
-
     console.log(req.params);
     const idQuiz = parseInt(req.params.idquiz);
     const idUsuario = parseInt(req.params.idusuario);
@@ -33,7 +31,6 @@ function exibirMedia(req, res) {
     }
     
 function exibirMaxPontuacao(req, res) {
-
     console.log(req.params);
     const idQuiz = parseInt(req.params.idquiz);
     const idUsuario = parseInt(req.params.idusuario);
@@ -46,11 +43,9 @@ function exibirMaxPontuacao(req, res) {
         console.error("Erro ao buscar a pontuação máxima: ", erro.sqlMessage);
         res.status(500).send("Erro ao buscar a pontuação máxima.");
     });
-
 }
 
 function exibirQtdTentativa(req, res) {
-
     console.log(req.params);
     const idQuiz = parseInt(req.params.idquiz);
     const idUsuario = parseInt(req.params.idusuario); 
@@ -63,11 +58,9 @@ function exibirQtdTentativa(req, res) {
         console.error("Erro ao buscar a quantidade de tentativas: ", erro.sqlMessage);
         res.status(500).send("Erro ao buscar a quantidade de tentativas.");
     });
-
 }
 
 function exibirElementoQuiz(req, res) {
-    
     console.log(req.params);
     const idQuiz = parseInt(req.params.idquiz);
 
@@ -79,7 +72,6 @@ function exibirElementoQuiz(req, res) {
         console.error("Erro ao buscar elemento do quiz: ", erro.sqlMessage);
         res.status(500).send("Erro ao buscar o elemento do quiz.");
     });
-
 }
 
 module.exports = {
